@@ -822,3 +822,4 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,vs,visualstudiocode,visualstudio,visualbasic,notepadpp,appcode,microsoftoffice,libreoffice
+.vscode/settings.json
