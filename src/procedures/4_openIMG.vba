@@ -1,4 +1,5 @@
 Private Sub btnSelect_Click()
+  Dim file_explorer, img_path
   Set file_explorer = Application.FileDialog(msoFileDialogFilePicker)
   file_explorer.Title = "Busca la imagen de la evidencia"
   file_explorer.AllowMultiSelect = False
@@ -11,4 +12,3 @@ Private Sub btnSelect_Click()
   
   Photo.Picture = LoadPicture(img_path)
   End Sub
-  

@@ -11,10 +11,11 @@ Private Sub btn_save_Click()
   code = Range("B6").Value
 
   If Me.txt_path <> "" Then
+    Dim evidence, origin, filepath, destination
     Set evidence = CreateObject("Scripting.FileSystemObject")
     origin = Me.txt_path.Value
-    filePath = ThisWorkbook.Path & "/"
-    destination = filePath & "img/" & code & ".jpg"
+    filepath = ThisWorkbook.Path & "/"
+    destination = filepath & "img/" & code & ".jpg"
     evidence.CopyFile origin, destination
     Range("G9").Value = code & ".jpg"
   Else
