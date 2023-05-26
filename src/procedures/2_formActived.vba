@@ -5,6 +5,7 @@ Private Sub UserForm_Activate()
   Me.regularity.AddItem ("Puntual")
   d = Format(Date, "YYYY/MM/DD")
   Me.txt_date.Value = d
-  d = Replace(d, "/", "")
-  Me.txt_code.Value = d
-End Sub
+  
+  Me.txt_code.Value = Replace(d, "/", "") & Range("B6").Value
+  
+  End Sub
